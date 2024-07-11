@@ -131,7 +131,6 @@ extra-packages:
   - singletons-base == 3.3              # 2024-06-28: preserve for GHC 9.8
 
 
-
 package-maintainers:
   abbradar:
     - Agda
