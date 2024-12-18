@@ -140,4 +140,5 @@ self: super: {
   # Breakage related to GHC 9.8.3 / deepseq 1.5.1.0
   # https://github.com/typeable/generic-arbitrary/issues/18
   generic-arbitrary = dontCheck super.generic-arbitrary;
+  haskell-language-server = disableCabalFlag "retrie" (disableCabalFlag "hlint" (disableCabalFlag "stylishhaskel" (super.haskell-language-server.override {stylish-haskell = null;retrie = null;apply-refact=null;hlint = null;})));
 }
